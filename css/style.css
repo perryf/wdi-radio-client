@@ -1,0 +1,11 @@
+.song-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.song-info {
+  width: 300px;
+}

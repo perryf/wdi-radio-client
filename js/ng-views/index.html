@@ -1,0 +1,9 @@
+<h2>Latest Tunes!</h2>
+<div class="song-index">
+  <div ng-repeat="song in vm.songs">
+    <div class="song-info">
+      <p><a ui-sref="songShow({id: song.id})">{{ song.title }}</a> by {{song.artist}}</p>
+      <img ng-src="{{song.photo_url}}" alt="{{song.title}}" width="200px">
+    </div>
+  </div>
+</div>
