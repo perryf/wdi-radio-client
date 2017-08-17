@@ -39,7 +39,7 @@ angular
 
   function SongEditControllerFunction(Song, $state) {
     this.song = Song.get({id: $state.params.id})
-    this.song.update = function () {
+    this.update = function () {
       this.song.$update({id: $state.params.id}, (song) => {
         $state.go('songShow', {id: song.id})
       })
