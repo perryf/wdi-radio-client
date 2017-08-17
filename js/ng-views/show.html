@@ -2,6 +2,7 @@
   <h2>{{vm.song.title}}</h2>
   <p>Artist: {{vm.song.artist}}</p>
   <p>Album: {{vm.song.album}}</p>
+  <song-play attr="vm.song"></song-play>
   <img ng-src="{{vm.song.photo_url}}" alt="{{vm.song.title}}" width="500px">
   <p><a ui-sref="songEdit({id: vm.song.id})">Edit this Song</a></p>
 </div>
