@@ -1,6 +1,7 @@
 <h2 class="title">Latest Tunes!</h2>
 <div class="song-index">
   <div ng-repeat="song in vm.songs">
+    <song-play attr='song'></song-play>
     <a ui-sref="songShow({id: song.id})">
       <div class="song-info">
         <p>{{ song.title }} by <span class="artist-index">{{song.artist}}</span></p>
