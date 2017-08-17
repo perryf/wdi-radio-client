@@ -10,6 +10,10 @@ angular
 function Router ($stateProvider, $locationProvider, $urlRouterProvider) {
   //$locationProvider.html5Mode(true)
   $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'js/ng-views/home.html'
+    })
     .state('songIndex', {
       url: '/songs',
       controller: 'SongIndexController',
@@ -34,5 +38,5 @@ function Router ($stateProvider, $locationProvider, $urlRouterProvider) {
       controller: 'SongEditController',
       controllerAs: 'vm'
     })
-  $urlRouterProvider.otherwise('/songs')
+  $urlRouterProvider.otherwise('/')
 }

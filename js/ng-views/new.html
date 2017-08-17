@@ -1,9 +1,17 @@
 <h2>Create a New Song</h2>
 
 <form>
+  <label for="Title">Song Title</label>
   <input placeholder="Song Title" ng-model="vm.song.title" />
+  <br>
+  <label for="Artist">Artist</label>
   <input placeholder="Artist" ng-model="vm.song.artist" />
+  <br>
+  <label for="Album">Album</label>
   <input placeholder="Album" ng-model="vm.song.album" />
+  <br>
+  <label for="Photo">Photo Url</label>
   <input placeholder="Photo URL" ng-model="vm.song.photo_url" />
+  <br>
   <button type="button" ng-click="vm.new()">Create</button>
 </form>
